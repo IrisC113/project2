@@ -17,7 +17,7 @@
           <a href="mailto:shc085@ucsd.edu">Shujia Chen</a>,
           <a href="mailto:qz001@ucsd.edu">Qi Zhang</a>,
           <a href="mailto:wec003@ucsd.edu">Weiyu Chen</a>,
-          <a href="mailto:xiz045@ucsd.edu">Xinyi Zeng</a>
+          <a href="mailto:zengxinyi04@gmail.com">Xinyi Zeng</a> <!--zxy: fill email-->
         </strong>
       </p>
 
@@ -26,20 +26,34 @@
     <main>
       <h2>Proposition: [STATE PROPOSITION]</h2>
 
+       <!-- zxy:FOR THE PROPOSITION -->
       <section>
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="images/for_po.png" alt="" />
+          <figcaption>In high-stress states, fewer clinics were significantly associated with lower abortion rates, supporting the proposition that clinic accessibility influences abortion rates.</figcaption>
         </figure>
 
-        <p>Design Decisions and Rationale:</p>
+        <h4>Design Decisions and Rationale</h4>
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>
+            <strong>Constructing an Accessibility Stress Index:</strong> Clinics vary in their distribution, accessibility, and number across states. The decline rates for some clinics may not accurately reflect service availability. Therefore, we constructed an <em>Accessibility Stress Index</em> using the mean of the proportion of women of childbearing age living in counties without a clinic and the proportion requiring interstate abortions. This index quantifies the overall difficulty a state's residents face in accessing abortion services, based on geographic barriers and interstate reliance.
+          </li>
+
+          <li>
+            <strong>Focusing on States with High Accessibility Pressure:</strong> If all states were considered, relatively accessible abortion services in states like New York would mask the correlation between clinics and abortion rates. To control for accessibility differences, we selected states with an Accessibility Pressure Index ranking at or above the 70th percentile. In these states, residents lack alternatives to clinics, and fewer clinics mean longer distances and higher costs. This selection strengthens the argument that fewer clinics significantly reduce abortion rates and prevents results from being obscured by cross-state abortion trends.
+          </li>
+
+          <li>
+            <strong>Visual Encoding and Interpretive Design:</strong> We used a scatter plot to show the relationship between the number of clinics (x-axis) and the abortion rate (y-axis), with dot colors representing accessibility pressure. Compared to a vector field, this visualization more intuitively demonstrates the positive relationship between clinic numbers and abortion rates. A linear fit line and text annotations turn the correlation into an interpretable narrative. The correlation coefficient between clinic change rate and abortion change rate is 0.54—a significant positive relationship—confirming that clinic reduction directly leads to lower abortion rates.
+          </li>
         </ul>
+
+        <h4>Ethical Reflection</h4>
+        <p>
+          The issue of abortion access involves sensitive ethical dimensions such as bodily autonomy and religion. The purpose of this visualization is not to make moral or political judgments about abortion itself, but to highlight how clinic closures impact individuals’ practical ability to exercise reproductive choice. The Accessibility Pressure Index was constructed to make state-level inequalities visible, not to justify them. However, the index does not capture factors like socioeconomic status, legal restrictions, or cultural stigma, which remain important limitations.
+        </p>
       </section>
 
       <section>
