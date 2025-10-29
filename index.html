@@ -72,19 +72,19 @@
         <h4>Design Decisions and Rationale:</h4>
         <ul>
           <li>
-            <strong>Filtering for States with Clinic Reductions (≤ 0%)</strong>
-            <p>Score: +1.5
+            <strong>RATIONALE 1: Filtering for States with Clinic Reductions (≤ 0%)</strong>
+            <p>Score: +1.5</p>
             <p>I focused only on states that experienced clinic losses between 2017 and 2020 to examine how clinic reductions correlate with cross-state abortion travel. This selection focuses on the states most affected by restrictive policies and it's easier to see the relationship between clinic closures and people traveling out of state for abortions. After removing states that aren’t relevant, the data become clearer, but it also limits the scope. However, the comparison is more balanced when states that gained clinics were not included. Since the graph clearly states that it looks only at states with clinic losses, the goal was to keep the message focused and easy to understand.</p>
             <p>Alternatives: The pattern became much clearer after filtering, though it reduced generalizability. I also thought about showing all states using a color gradient for clinic change, but that made the key message about “traveling out of state” harder to notice.</p>
             </li>
           <li>
-            <strong>Design Decision 3: Choosing a Bar Chart to Compare % Change in Clinics vs. % Traveling Out of State</strong>
-            <p>Score: +2
-            <p>I used a bar chart so it’s easy to compare each state directly and to avoid exaggerating the relationship between the two variables. Unlike scatter plots or area charts, bar charts focus on how big the changes are instead of suggesting causality. The design is easy to understand for non-technical audiences and doesn’t imply any false sense of statistical significance.</p>
-            <p>Alternatives: I thought about using a scatter plot to show the trend’s direction, but that might have taken attention away from the story the graph is trying to tell. I eventually chose a bar chart because it made the pattern clearer and more straightforward to interpret.</p>
+            <strong>RETIONALE 2: Encoding % Traveling Out of State (2020) Using a Sequential Red Gradient</strong>
+            <p>Score: +1</p>
+            <p>The red color scale clearly shows how the percentage of people traveling out of state for abortions increases. It helps reader feel the sense of urgency. The gradual change in red shades keeps the data accurate and easy to read with the color bar.</p>
+            <p>Alternatives: I thought about using cooler colors like blue to make the chart look more neutral. However, I kept red eventually because the red gradient made the differences stand out strongly.</p>
           </li>
           <li>
-            <strong>Design Decision 3: Choosing a Bar Chart to Compare % Change in Clinics vs. % Traveling Out of State</strong> 
+            <strong>RATIONALE 3: Design Decision 3: Choosing a Bar Chart to Compare % Change in Clinics vs. % Traveling Out of State</strong> 
             <p>Score: +2
             <p>I used a bar chart so it’s easy to compare each state directly and to avoid exaggerating the relationship between the two variables. Unlike scatter plots or area charts, bar charts focus on how big the changes are instead of suggesting causality. The design is easy to understand for non-technical audiences and doesn’t imply any false sense of statistical significance.</p>
             <p>Alternatives: I thought about using a scatter plot to show the trend’s direction, but that might have taken attention away from the story the graph is trying to tell. I eventually chose a bar chart because it made the pattern clearer and more straightforward to interpret.</p>
