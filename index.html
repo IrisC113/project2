@@ -38,17 +38,26 @@
         <h4>Design Decisions and Rationale</h4>
         <ul>
           <li>
-            <strong>Constructing an Accessibility Stress Index:</strong> Clinics vary in their distribution, accessibility and number across states. The decline rates for some clinics may not accurately reflect the availability of services. Therefore, we constructed an Accessibility Stress Index using the mean of the proportion of women of childbearing age living in counties without a clinic and the proportion requiring interstate abortions. This index quantifies the overall difficulty a state's residents face in accessing abortion services, based on geographic barriers and interstate reliance.
+            <strong>RATIONALE 1: Constructing an Accessibility Stress Index</strong>
+            <p>Score: +1</p>
+            <p>The distribution, transportation availability and number of clinics vary across states, so the decline rate of some clinics cannot accurately reflect the accessibility of clinic services. Therefore, we constructed an accessibility stress index using the mean of the proportion of women of childbearing age residing in counties without clinics and the proportion requiring interstate abortions. This measures the overall difficulty faced by a state's residents in accessing abortion services from the perspective of geographical barriers and interstate dependence. It is important to note that the accessibility stress index was constructed to make state inequalities visible, not to defend them. Furthermore, this index does not consider socioeconomic status, legal restrictions or cultural stigma, which has certain limitations.</p>
+            <p>Alternatives:  While the averaging method and indicator selection are slightly simplified, they ensure transparency and interpretability. Direct averaging, rather than using weighted or principal component analysis, avoids over-modeling and facilitates reader comprehension.</p>
           </li>
 
           <li>
-            <strong>Focusing on States with High Accessibility Pressure:</strong> If all states were considered, relatively accessible abortion services in individual states, such as New York, would mask the correlation between clinics and abortion rates. To control for differences in accessibility, we selected states with an Accessibility Pressure Index ranking of 70th percentile or higher. In these states, residents lack alternatives to clinics, and fewer clinics translate into longer distances and higher costs. This data selection strengthens the argument that fewer clinics significantly reduce abortion rates and prevents the results from being obscured by cross-state abortion trends.
+            <strong>RATIONALE 2: Focuses on States with High Accessibility Pressure</strong>
+            <p>Score: 0</p>
+            <p>To control for differences in accessibility, we selected states with an accessibility pressure index at or above the 70th percentile. In these states, residents lack alternatives to clinic abortions, and fewer clinics mean longer distances and higher costs. This data selection reinforces the argument that fewer clinics significantly reduce abortion rates and avoids the results being masked by interstate abortions. However, the initial intention was to present true accessibility differences, not to manipulate results.</p>
+            <p>Alternatives:  Considering all states, individual states with relatively accessible abortion services, such as New York, could mask the correlation between clinics and abortion rates. Selecting states with high accessibility pressure, while reducing the sample size, improved the validity of causal inferences.</p>
           </li>
 
           <li>
-            <strong>Visual Encoding and Interpretive Design:</strong> We chose to use a scatter plot to illustrate the relationship between the number of clinics (x-axis) and the abortion rate (y-axis), using the color of the dots to represent the value of accessibility pressure. Compared to the vector field image representation, the scatter plot more intuitively demonstrates the positive relationship between the number of clinics and the abortion rate. By adding a linear fit line and text annotations, the data relationship is transformed into an interpretable narrative. As can be seen from the figure, the correlation coefficient between the clinic change rate and the abortion change rate is 0.54, which is a significant positive relationship. This confirms that the reduction in clinics directly leads to a decrease in the abortion rate.
+            <strong>RATIONALE 3: Visual Encoding and Interpretive Design</strong>
+            <p>Score: +2</p>
+            <p>We chose to use a scatter plot to show the relationship between changes in the number of clinics (x-axis) and abortion rates (y-axis), with the color of the points representing the accessibility pressure value. The colors are continuous. Furthermore, by adding linear fitting lines and textual annotations, the data relationships were transformed into an interpretable narrative. As can be seen from the image, the correlation coefficient between the clinic change rate and the abortion change rate is 0.54, indicating a significant positive relationship. This confirms that a reduction in clinics directly leads to a decrease in the abortion rate.</p>
+            <p>Alternatives:  We previously used vector fields as a visualization method, but due to the large number and disorder of vectors, it was impossible to visually represent the linear trend between the two as intuitively as a scatter plot.</p>
+          </li>
         </ul>
-
       </section>
 
       <section>
@@ -85,8 +94,8 @@
 
       <section>
         <h2>Final Reflection</h2>
-          <p>The issue of abortion access we explore is a sensitive ethical issue involving bodily autonomy and religion. The purpose of this visualization is not to make moral or political judgments about abortion itself, but rather to highlight how actions like clinic closures affect individuals' practical ability to exercise reproductive choice. The Accessibility Pressure Index was constructed to make state inequalities visible, not to justify them. Furthermore, the index does not account for socioeconomic status, legal restrictions or cultural stigma, which poses certain limitations.
-      </section>
+          <p>In visualizing the affirmative stance, we found constructing interesting and reasonable variables challenging. Our final abortion accessibility pressure index quantified the degree of environmental barriers to the greatest extent possible within the provided data. Implementing and comparing different chart types, such as scatter plots and vector fields, was relatively simple. Surprisingly, data selection and color scaling significantly influenced people's choices, making us more cautious in our visualization interpretation. For counter-position's overall design process, It was difficult to stay objective while still making the message persuasive. I was surprised by how color intensity could greatly change how viewers interpreted the data.</p>
+          <p>Furthermore, when constructing accessibility pressure parameters and focusing on states with high pressure indices, there is a tendency to use persuasive narratives. We believe that the key to distinguishing between misleading and acceptable choices lies in the neutrality and rationality of the choice. Acceptable persuasive choices are those that help the audience understand the true pattern more clearly, while misleading choices obscure context, exaggerate causality, or rely too heavily on emotion rather than evidence. Ethical analysis and visualization are not about completely avoiding persuading the other party's position, but rather about demonstrating the rationality of one's interpretation when choices are openly designed.</p>
     </main>
   </body>
 </html>
